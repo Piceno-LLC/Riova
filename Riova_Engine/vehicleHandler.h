@@ -1,7 +1,5 @@
 #pragma once
 
-// Custom String
-
 class vehicleHandler {
 private:
 	int vehID = 0;
