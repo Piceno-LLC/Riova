@@ -2,12 +2,22 @@
 
 class vehicleHandler {
 private:
-	int vehID = 0;
+
+	// Vehicle Properties
+	int ownerID = 0;
 	double weight = 0.0;
 
 public:
-	vehicleHandler(int niVehID);
+	
+	// Constructor and Destructor
+	vehicleHandler(int plrID);
 	~vehicleHandler();
 
-	int getVehID() { return vehID; };
+	// Core Methods
+	int enterVehicle(int plrID);
+	void despawnVehicle();
+	void setOwnerID(int id);
+
+	// Getters
+	int getVehID() { return ownerID; };
 };

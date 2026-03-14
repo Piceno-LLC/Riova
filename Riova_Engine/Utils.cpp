@@ -60,6 +60,7 @@ GLuint Utils::createShaderProgram(const char* vp, const char* tCS, const char* t
 	return GLuint();
 }
 
+// Output Shader Log
 void Utils::printShaderLog(GLuint shader) {
 	int len = 0;
 	int chWrittn = 0;
@@ -73,6 +74,7 @@ void Utils::printShaderLog(GLuint shader) {
 	}
 }
 
+// Output Program Log
 void Utils::printProgramLog(int prog)
 {
 	int len = 0;
@@ -87,6 +89,7 @@ void Utils::printProgramLog(int prog)
 	}
 }
 
+// Check for OpenGL Errors
 bool Utils::checkOpenGLError()
 {
 	bool foundError = false;
