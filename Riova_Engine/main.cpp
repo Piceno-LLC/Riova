@@ -113,7 +113,7 @@ void display(GLFWwindow* window, double currentTime) {
 	}
 }
 
-// Method of Entry
+// Method of Entry 
 int main() {
 
 	// Setup Arrays
